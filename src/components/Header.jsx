@@ -24,10 +24,20 @@ const Header = () => {
           <Link className="btn btn-ghost normal-case text-xl" to="/register">
             Register
           </Link>
+          <Link className="btn btn-ghost normal-case text-xl" to="/orders">
+            Orders
+          </Link>
+          {user && (
+            <Link className="btn btn-ghost normal-case text-xl" to="/profile">
+              Profile
+            </Link>
+          )}
           {user ? (
             <>
               <span>{user.email}</span>{" "}
-              <button onClick={handleLogout} className="btn btn-xs">Sign Out</button>
+              <button onClick={handleLogout} className="btn btn-xs">
+                Sign Out
+              </button>
             </>
           ) : (
             <Link to="/login">Login</Link>
