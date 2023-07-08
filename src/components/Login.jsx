@@ -13,9 +13,9 @@ const Login = () => {
 
   return (
     <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Please Login now!</h1>
+      <div className="hero-content flex-col">
+        <div className="text-center">
+          <h1 className="text-5xl font-bold mb-2">Please Login now</h1>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form action="" className="card-body" onSubmit={handleLogin}>
@@ -52,7 +52,11 @@ const Login = () => {
               <button className="btn btn-primary">Login</button>
             </div>
           </form>
-          <Link to="/register" className="btn btn-link">New to firebase auth? Register now!</Link>
+          <div className="text-center mb-5">
+            <Link to="/register" className="label-text-alt link link-hover">
+              New to firebase auth? Register now!
+            </Link>
+          </div>
         </div>
       </div>
     </div>
