@@ -16,11 +16,11 @@ const Header = () => {
     <div>
       <div className="navbar bg-rose-400 my-[-8px]">
             <div className="navbar-start">
-                <div className="dropdown text-center">
+                <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-" fill="none" viewBox="0 0 20 20" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
-                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-80">
+                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-2 z-[1] p-2 shadow  rounded-box w-80 bg-rose-400 text-white">
                 <li><Link className="btn btn-ghost normal-case text-xl" to="/">Home </Link></li>
                     {!user && <>
                         <li> <Link className="btn btn-ghost normal-case text-xl" to="/login"> Login </Link> </li>
