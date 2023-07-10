@@ -26,7 +26,7 @@ const Login = () => {
   };
 
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-base-200 neg-margin">
       <div className="hero-content flex-col">
         <div className="text-center">
           <h1 className="text-5xl font-bold mb-2">Please Login now</h1>
@@ -63,7 +63,7 @@ const Login = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Login</button>
+              <button className="btn bg-rose-400 hover:bg-rose-600 text-white">Login</button>
             </div>
           </form>
           <div className="text-center mb-5">
